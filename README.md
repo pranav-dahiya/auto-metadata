@@ -9,6 +9,7 @@
   
   - path/to/library/Author/Album/cover.jpg 
   
+  *For renaming files to fit this format, check out `rename`/`perl-rename` for bulk renaming files using regular expressions*
  
  Execute: 
  
