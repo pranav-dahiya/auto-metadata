@@ -26,3 +26,12 @@ Install dependencies:
 ```
 pip install mutagen tqdm
 ```
+
+Creates/Edits the following tags:
+
+- TITLE
+- TRACKNUMBER
+- TOTALTRACKS
+- ARTIST
+- ALBUM
+- COVER_FRONT
