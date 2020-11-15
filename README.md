@@ -9,4 +9,13 @@
   
   - path/to/library/Author/Album/cover.jpg 
   
-  
+ 
+ Execute: 
+ '''
+ python auto-metadata.py path/to/library
+ '''
+ 
+ Depends on:
+ 
+  - mutagen
+  - tqdm 
