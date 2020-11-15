@@ -1,5 +1,6 @@
 import os
 import sys
+import tqdm
 from mutagen import flac, id3
 
 if len(sys.argv) == 2:
@@ -16,7 +17,8 @@ for root, dirs, files in os.walk(working_dir):
             album_cover.type = id3.PictureType.COVER_FRONT
             album_cover.mime = u"image/jpeg"
             artist, album = root.split("/")[-2:]
-            for filename in tracks:
+            print(artist, '-',  album)
+            for filename in tqdm.tqdm(tracks):
                   track_number, track_name = filename[:-5].split(" - ")
                   track = flac.FLAC(root + "/" + filename)
                   track['TITLE'] = track_name 
