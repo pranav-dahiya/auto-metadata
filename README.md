@@ -11,11 +11,18 @@
   
  
  Execute: 
- '''
+ 
+ ```
  python auto-metadata.py path/to/library
- '''
+ ```
  
  Depends on:
  
   - mutagen
   - tqdm 
+
+Install dependencies:
+
+```
+pip install mutagen tqdm
+```
